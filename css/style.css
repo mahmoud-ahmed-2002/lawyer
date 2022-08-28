@@ -1,0 +1,540 @@
+:root {
+  --main-color: #3857ff;
+  --sec-color: #112957;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s;
+}
+
+body {
+  font-family: "Aboreto", cursive;
+  overflow-x: hidden;
+}
+
+.my-btn {
+  background: var(--sec-color);
+  padding: 14px 27px;
+  border: 0;
+  color: #fff;
+}
+.ptb-115 {
+  margin-top: 115px;
+  margin-bottom: 115px;
+}
+.ptb-70 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+ul,
+li {
+  list-style: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*   ------------------ style of navbar start */
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 800;
+}
+/*   ------------------ style of navbar end */
+/*   ------------------ style of home start */
+
+.ineer-home {
+  background-image: url(../image/im3.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.home .data-home {
+  display: flex;
+  align-items: start;
+  justify-items: center;
+  padding-top: 140px;
+  width: 50%;
+  flex-direction: column;
+}
+
+h5.tittle {
+  color: var(--main-color);
+  position: relative;
+  padding-left: 130px;
+}
+
+h5.tittle::after {
+  content: "";
+  height: 2px;
+  width: 100px;
+  background: var(--main-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .data-home h2 {
+  font-size: 60px;
+  font-weight: 900;
+}
+.home .data-home p {
+  font-weight: 500;
+}
+
+/*   ------------------ style of home end */
+/*   ------------------ style of practicing area start */
+
+.pract-area {
+  margin: 160px auto;
+}
+.pract-area .ineer-pract h5 {
+  margin: 20px 0px;
+}
+.pract-area .ineer-pract h2 {
+  margin: 20px 0px;
+  font-weight: 600;
+  font-size: 33px;
+}
+
+.pract-area .cart-pract {
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 30px 50px;
+  margin-top: 20px;
+  position: relative;
+}
+.pract-area .cart-pract::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.pract-area .cart-pract1::after {
+  transform: scale(0);
+  left: -200px;
+}
+.pract-area .cart-pract1:hover::after {
+  transform: scale(1);
+  left: 0;
+}
+.pract-area .cart-pract2::after {
+  transform: scale(0);
+  top: -150px;
+  left: 0;
+}
+.pract-area .cart-pract2:hover::after {
+  transform: scale(1);
+  top: 0;
+}
+.pract-area .cart-pract3::after {
+  transform: scale(0);
+  right: -150px;
+}
+.pract-area .cart-pract3:hover::after {
+  transform: scale(1);
+  right: 0;
+}
+
+.pract-area .cart-pract .cart-icons i {
+  font-size: 40px;
+  color: var(--main-color);
+}
+.pract-area .cart-pract:hover .cart-icons i,
+.pract-area .cart-pract:hover .cart-tittle,
+.pract-area .cart-pract:hover p,
+.pract-area .cart-pract:hover a {
+  color: #fff;
+}
+
+.pract-area .cart-pract .cart-tittle {
+  padding: 15px 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.pract-area .cart-pract p {
+  color: #787878;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+}
+.pract-area .cart-pract a {
+  text-decoration: none;
+  color: var(--sec-color);
+}
+
+.pract-area .cart-pract a i {
+  transition: all 0.2s;
+}
+.pract-area .cart-pract a:hover i {
+  padding-left: 10px;
+}
+
+/*   ------------------ style of practicing area end */
+/*   ------------------ style of about start */
+
+.about .ineer-about {
+  background-image: url(../image/im15.png);
+  background-position: center;
+  background-size: cover;
+}
+.about .about-image img {
+  width: 100%;
+}
+
+.about .about-body {
+  padding-left: 30px;
+  padding-top: 115px;
+  padding-right: 110px;
+}
+
+.about .about-body,
+.about .about-body h5.tittle {
+  color: #fff;
+}
+.about .about-body h5.tittle::after {
+  background-color: #fff;
+}
+
+.about .about-body h5.tittle {
+  margin-bottom: 20px;
+}
+
+.about .about-body h1 {
+  margin-bottom: 20px;
+}
+
+.about .about-body p {
+  margin: 35px auto;
+}
+
+.about .about-body .p {
+  margin-bottom: 70px;
+  color: #acd1d1;
+}
+/*   ------------------ style of about end */
+/*   ------------------ style of contact start */
+
+.contact .ineer-contact {
+  background: #ecf3ff;
+  width: 100%;
+  height: 610px;
+  position: relative;
+}
+
+.contact .form-contact {
+  max-width: 65%;
+  background: var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  padding: 90px 50px 60px 50px;
+  color: #fff;
+}
+
+.contact .form-contact h5.tittle {
+  color: #fff;
+}
+.contact .form-contact h5.tittle::after {
+  background-color: #fff;
+}
+.contact .form-contact h2 {
+  padding: 30px;
+}
+.contact .btn {
+  text-align: start;
+}
+.contact .dropdown-toggle::after {
+  margin-left: 6.255em;
+}
+::placeholder {
+  color: var(--main-color);
+}
+
+/*   ------------------ style of contact end */
+/*   ------------------ style of our works start */
+
+.our-works .ineer-works {
+  padding-top: 200px;
+}
+
+.our-works ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.our-works ul li.active {
+  color: var(--main-color);
+}
+
+.our-works .card-works {
+  margin: 60px auto;
+}
+
+.our-works .card-works .image-works {
+  position: relative;
+}
+
+.our-works .card-works .title-card-works {
+  background: #f8f9ff;
+  position: absolute;
+  width: 69%;
+  bottom: -80px;
+  padding: 20px;
+}
+
+.our-works .card-works .title-card-works p {
+  font-size: 19px;
+}
+/*   ------------------ style of our works end */
+/* ------------------------------------------- */
+
+.single-text {
+  background: var(--main-color);
+  padding: 80px;
+}
+
+.single-text .ineer-text {
+  color: #fff;
+  float: left;
+  font-size: 44px;
+  width: 70%;
+}
+.single-text .button-text {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ------------------------------------------- */
+/*   ------------------ style of our team start */
+
+.our-lawyer .ineer-team h5 {
+  font-weight: 600;
+}
+.our-lawyer .cart-team {
+  background-color: #f8f9ff;
+}
+.our-lawyer .cart-team img {
+  width: 100%;
+}
+.our-lawyer .ineer-team h2 {
+  margin: 20px 0px;
+  font-weight: 600;
+  font-size: 33px;
+}
+.our-lawyer .cart-team .team-deatil {
+  margin-left: 35px;
+  padding-bottom: 20px;
+}
+.our-lawyer .cart-team h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 30px 0px 10px 0px;
+}
+.our-lawyer .cart-team h5 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 105px;
+}
+
+.our-lawyer .cart-team h5.tittle::after {
+  width: 80px;
+}
+
+.our-lawyer .image-team {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.our-lawyer .icons-team {
+  position: absolute;
+  top: 100%;
+  background-color: #787878d1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: all 0.2s;
+}
+
+.our-lawyer .image-team:hover .icons-team {
+  top: 0px;
+  opacity: 1;
+  transform: scale(1);
+}
+.our-lawyer .image-team:hover .icons-team ul li {
+  transform: scale(1);
+}
+
+.icons-team ul li {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  transform: scale(0.2);
+  transition: all 0.2s 0.2s;
+}
+
+.icons-team ul li i {
+  padding: 4px;
+}
+
+/*   ------------------ style of our team end */
+/*   ------------------ style of tsetimonials start */
+
+.tsetimonials {
+  background: url(../image/im11.png) center no-repeat;
+}
+.ineer-testimoials {
+  padding: 150px 100px;
+  text-align: center;
+}
+.ineer-testimoials .tsetimonials-details {
+  color: #fff;
+}
+
+.tsetimonials img{
+  width: auto;
+  height: auto;
+}
+
+/*   ------------------ style of tsetimonials end */
+/*   ------------------ style of about start*/
+
+.card-about .image-aboutcard{
+  position: relative;
+}
+.card-about img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-about .inner-about{
+  background: #fff;
+  padding:15px 110px 15px 60px ;
+  position: absolute;
+  bottom: 0%;
+}
+
+.card-about .detail-about-card{
+  padding-left: 60px;
+  background: #ecf3ff;
+}
+.detail-about-card h3{
+  padding: 24px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.detail-about-card p{
+  color: #808080;
+}
+
+/*   ------------------ style of about end*/
+
+/*   ------------------ style of footer start*/
+.footer {
+  background-image: url(../image/im14.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer .ineer-footer {
+  color: #e1e1e1;
+  padding: 100px 0px;
+}
+.footer .icon-click {
+  display: none;
+}
+.footer .footer-static-block img {
+  filter: brightness(0) invert(1);
+}
+.footer .footer-static-block .f-logo {
+  margin-bottom: 40px;
+}
+.footer .footer-static-block .number {
+  margin: 30px 0px;
+  font-size: 30px;
+  color: #fff;
+}
+.footer .footer-static-block .number span {
+  color: var(--main-color);
+}
+.footer .footer-static-block h3 {
+  margin-bottom: 40px;
+  color: #fff;
+}
+.footer .footer-static-block .links li {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.footer .footer-static-block .links li::after {
+  content: "";
+  background: #e1e1e1;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer .footer-static-block .links li:hover {
+  margin-left: 10px;
+}
+.footer .footer-static-block{
+  display: block;
+}
+.footer-block-content .subscribe{
+  margin: 35px 0px;
+}
+.footer-block-content input{
+background: #101721;
+padding: 10px;
+border: none;
+}
+.footer-block-content button{
+  background: #0A0E17;
+  color: var(--main-color);
+}
+
+::placeholder{
+  color: #787878;
+}
+
+@media only screen and (max-width: 992px) {
+  .footer-static-block .icon-click {
+    display: inline-block;
+    position: absolute;
+    right: 155px;
+    cursor: pointer;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  .footer-static-block .icon-click i:hover {
+    color: var(--main-color);
+  }
+
+  .footer .footer-static-block{
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 40px;
+  }
+  .footer .footer-block-content{
+    display: none;
+  }
+
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1196px) {
+  .about .about-body {
+    padding: 30px 0px 0px 0px;
+  }
+  .about .about-body h5.tittle {
+    margin-bottom: 20px;
+  }
+  .about .about-body h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .about .about-body p {
+    margin: 0px 0px 10px 0px;
+  }
+  .about .about-body .p {
+    margin-bottom: 10px;
+  }
+  .our-works ul li {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .contact .form-contact {
+    padding: 95px 0px 33px 0px;
+  }
+  .contact .dropdown-toggle::after {
+    margin-left: 1.255em;
+  }
+
+  .home .data-home h2 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .contact .form-contact {
+    padding: 29px 0px 6px 0px;
+  }
+  .contact .dropdown-toggle::after {
+    margin-left: 1.255em;
+  }
+  .single-text .ineer-text {
+    font-size: 15px;
+    width: 38%;
+}
+}
